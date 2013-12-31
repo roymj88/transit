@@ -1,0 +1,9 @@
+.body{
+	padding: 10px !important;
+	margin-left:50px !important; 
+	margin-right:50px !important; 
+}
+
+.footer .container p{
+	text-align: center;
+}
