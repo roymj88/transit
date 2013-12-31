@@ -1,0 +1,179 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="body">
+	<h1 id="headings"><u>Transition Plugin</u></h1><hr>
+
+	<p>
+		The project is aimed at implementing a simple transition/loading effect on a webpage at events triggered by the user. The following content is aimed at providing the source as well as a live demo of the working of the plugin. This is optmized so that users can access this via dekstop/mobile. <br>
+		<br>
+		Email to <a href="mailto:roymj88@gmail.com">roymj88@gmail.com</a> or contact me at <a href="http://blog.roymj.co.in">http://blog.roymj.co.in</a> for more details.
+	</p>
+
+	<h5 id="headings" class="blue bold"><strong>1. Target Entire Page</strong></h5><hr>
+	<div class="well">
+		<p>
+			Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer consequat magna lorem, commodo porttitor libero elementum in. Nam dictum purus sem, non viverra nunc molestie feugiat. Etiam nulla erat, feugiat at consequat nec, commodo at massa. Phasellus vitae fermentum justo, semper elementum sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras at tortor ultrices; laoreet ipsum non, porta sem. Donec aliquam mattis sapien id imperdiet! Etiam a elementum sapien, eu faucibus mi. Pellentesque condimentum at turpis vitae rutrum. Nunc eget ullamcorper velit, at scelerisque nibh. Sed varius augue dapibus lectus semper commodo. Curabitur consectetur augue in laoreet pulvinar.
+		</p>
+		<p>
+			Nulla sit amet consequat turpis! Curabitur a odio in nibh mattis lobortis. Proin faucibus orci lorem, eget commodo elit semper ut. Nulla nec lacus at mi dapibus pellentesque. Fusce varius hendrerit tellus, ac consequat arcu euismod ac. Quisque sed metus in ipsum facilisis auctor? Proin at ornare sem. Etiam pharetra ligula vitae ullamcorper dignissim. Ut ultricies sit amet ipsum sed ornare. Etiam viverra justo nisl, eu bibendum justo pretium ut.
+		</p>
+		<p>
+			In hac habitasse platea dictumst. Mauris consequat, orci et faucibus ullamcorper, elit magna imperdiet diam, mattis egestas leo purus nec nulla. Nam dapibus libero ante, in lobortis libero lobortis a. Nulla facilisi. Mauris est justo, facilisis quis adipiscing eget, lacinia vel ipsum. Integer vel libero dui. Ut sit amet lectus tincidunt, cursus libero ac, pharetra tellus. Donec eu purus congue, vehicula arcu at, tincidunt augue. Curabitur dictum rutrum nulla in scelerisque. Aliquam feugiat laoreet eros at scelerisque. Vivamus a diam a augue feugiat sagittis. Cras a nibh luctus, aliquam nisl quis, mattis nulla.
+		</p>
+	</div>
+
+	Demo : <button class="btn btn-primary transit" type="button">Click</button>
+	<hr>
+
+	<div class="row-fluid">
+		<h6><strong>Syntax</strong> : </h6>
+		<pre>
+			<code>
+$(document).on("click",".transit", function(){
+	$("body").transit();
+});		
+			</code>
+		</pre>
+	</div>
+	<hr>
+
+	<h5 id="headings" class="blue"><strong>2. Target a DIV</strong></h5>
+
+	<div class="well transitDiv"><p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel rhoncus ante, vitae suscipit orci? In vel ullamcorper velit. Fusce dapibus tortor at volutpat elementum. Mauris aliquet eros vitae luctus dapibus. Vivamus tincidunt risus orci; in vulputate ligula adipiscing ac. In sed nibh rhoncus nulla fermentum venenatis. Cras sit amet ultrices sem. Mauris nisi sem, euismod a dui molestie, fermentum mollis urna. Etiam malesuada lacus massa; vitae laoreet neque fermentum eget? Mauris placerat nisi ut posuere pulvinar. Pellentesque id vehicula augue. Phasellus sodales, augue vel lobortis congue, orci ante accumsan enim, nec sollicitudin mauris nibh vitae ipsum. Cras vehicula dapibus hendrerit.</p>
+	</div>
+
+	Demo : <button class="btn btn-primary div1" type="button">Click</button>
+		
+	<hr>
+
+	<div class="row-fluid">
+		<h6><strong>Syntax</strong> : </h6>
+		<pre>
+			<code>
+$(document).on("click",".transit", function(){
+$(".transitDiv").transit();//Add class/id of div to be targetted
+});		
+			</code>
+		</pre>
+	</div>
+
+	<hr>
+	<div class="row-fluid">
+		<h6 id="headings" class="blue"><strong>This can be targetted for any html entity. Simply call <code>.transit()</code> function for that event by specifying the correct selector.</strong></h5>
+
+		
+	</div>
+
+	<hr>
+	<div class="row-fluid">
+	<h6>The effects can be extended to literally  all effects that are available in jquery effects.</h6>
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th>Sl No</th>
+					<th>Name</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<span class="badge">1</span>
+					</td>
+					<td>
+						<code>animate</code>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="badge">2</span>
+					</td>
+					<td>
+						<code>slide</code>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="badge">3</span>
+					</td>
+					<td>
+						<code>pop</code>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="badge">4</span>
+					</td>
+					<td>
+						<code>flip</code>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="badge">5</span>
+					</td>
+					<td>
+						<code>slidedown</code>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="badge">6</span>
+					</td>
+					<td>
+						<code>slideup</code>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="badge">7</span>
+					</td>
+					<td>
+						<code>turn</code>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="badge">8</span>
+					</td>
+					<td>
+						<code>slidefade</code>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="badge">9</span>
+					</td>
+					<td>
+						<code>flow</code>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+	<footer class="footer">
+		<div class="container">
+			<p>
+				Designed and built with all the love in the world by <a target="_blank" href="http://blog.roymj.co.in">Roy</a>
+			</p>
+		</div>
+	</footer>
+
+</div>
+
+	
+
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+	<script type="text/javascript" src="jquery.transition.js"></script>
+
+
+</body>
+</html>
