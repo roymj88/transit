@@ -8,8 +8,15 @@
         $.fn.transit = function(options) {
                 $(this).css("display", "none");
                 /*Fetching user defined values*/
-                var effect   = options.effect;
-                var duration = options.duration;
+                
+                if(!jQuery.isEmptyObject(options)){
+                        if(options.effect){
+                                var effect   = options.effect;
+                        }
+                        if(options.duration){
+                                var duration = options.duration; 
+                        }
+                }
                 /*Fetching config values*/
                 
                 
